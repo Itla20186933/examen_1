@@ -3,7 +3,7 @@ name: Integración continua y despliegue en Surge
 on:
   push:
     branches:
-      - main # Cambia "main" por el nombre de tu rama principal si es diferente
+      - dev # Cambia "main" por el nombre de tu rama principal si es diferente
 
 jobs:
   build:
