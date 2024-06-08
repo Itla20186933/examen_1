@@ -1,0 +1,14 @@
+name: Nombre_de_tu_accion
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  nombre_del_trabajo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Acción
+        run: echo "Hola, mundo!"
