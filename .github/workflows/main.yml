@@ -1,14 +1,25 @@
-name: Nombre_de_tu_accion
+name: Integración continua y despliegue en Surge
 
 on:
   push:
     branches:
-      - dev
+      - main # Cambia "main" por el nombre de tu rama principal si es diferente
 
 jobs:
-  nombre_del_trabajo:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Acción
-        run: echo "Hola, mundo!"
+      - name: Checkout del código
+        uses: actions/checkout@v2
+      
+      - name: Instalar dependencias y ejecutar pruebas (ejemplo de CI, ajusta según tus necesidades)
+        run: |
+          npm install
+          npm test # Ejemplo de ejecución de pruebas
+
+      - name: Instalar Surge
+        run: npm install -g surge
+
+      - name: Desplegar en Surge
+        run: surge --project .C:\Users\elsay\examen_1 --domain primer_examen.surge.sh
