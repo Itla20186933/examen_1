@@ -1,13 +1,22 @@
 {
-  "name": "nombre_del_proyecto",
+  "name": "examen_1",
   "version": "1.0.0",
-  "description": "Una breve descripción de tu proyecto",
-  "main": "index.js",
+  "description": "Quix",
+  "main": "dex.html)",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "dependencia1": "^1.0.0",
-    "dependencia2": "^2.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itla20186933/examen_1.git"
+  },
+  "keywords": [
+    "quiz"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Itla20186933/examen_1/issues"
+  },
+  "homepage": "https://github.com/Itla20186933/examen_1#readme"
 }
